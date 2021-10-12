@@ -9,8 +9,8 @@ import UIKit
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
-    let imagecCellID = "images"
-    let albumsCellID = "albums"
+    let imagecCellID = "imagesID"
+    let albumsCellID = "albumsID"
     
     let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
