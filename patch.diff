@@ -1,0 +1,30 @@
+From 2e0338f728acf6dae1440aefcac24dcbd3a46ed0 Mon Sep 17 00:00:00 2001
+From: ABGitRu <begoodbebad2012@gmail.com>
+Date: Tue, 12 Oct 2021 19:18:16 +0300
+Subject: [PATCH] =?UTF-8?q?Revert=20"=D0=B8=D0=B7=D0=BC=D0=B5=D0=BD=D0=B5?=
+ =?UTF-8?q?=D0=BD=D0=B8=D0=B5=20lineSpacing"?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+This reverts commit e771bb3f261b12898ef0251449f67c6165636d3e.
+---
+ testing/ViewController.swift | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/testing/ViewController.swift b/testing/ViewController.swift
+index 4a24ed9..1997f3d 100644
+--- a/testing/ViewController.swift
++++ b/testing/ViewController.swift
+@@ -14,7 +14,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
+     
+     let collectionView: UICollectionView = {
+         let layout = UICollectionViewFlowLayout()
+-        layout.minimumLineSpacing = 18
++        layout.minimumLineSpacing = 16
+         layout.scrollDirection = .vertical
+         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
+         cv.backgroundColor = .yellow
+-- 
+2.31.0
+
